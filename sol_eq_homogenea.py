@@ -7,8 +7,12 @@ import math
 import numpy as np
 import matplotlib.pyplot as plt
 
-c = [-0.6, -0.16]
-ci = [0, (25 / 4)]
+# c = [-0.6, -0.16]
+# ci = [0, (25 / 4)]
+
+c = [6, 9] 
+ci = [-1/3, -2/9]
+
 n = np.arange(0,30)
 def solucao_geral(coeficientes, ci, n):
     # considerando que a ordem é igual a 2
@@ -18,9 +22,15 @@ def solucao_geral(coeficientes, ci, n):
         
     print(f"gama1: {gama1} \ngama2: {gama2}")
 
-    array1 = np.array([[gama1**(-1), gama2**(-1)], [gama1**(-2), gama2**(-2)]])
-    array2 = np.array([ci[0], ci[1]])
+    if delta == 0:
+        array1 = np.array([[gama1**(-1), (-1)*(gama2**(-1))], [gama1**(-2), (-2)*(gama2**(-2))]])
+        array2 = np.array([ci[0], ci[1]])
 
+    else: 
+        array1 = np.array([[gama1**(-1), gama2**(-1)], [gama1**(-2), gama2**(-2)]])
+        array2 = np.array([ci[0], ci[1]])
+
+# fazer para delda < 0
     constantes = np.linalg.solve(array1, array2) # funcao q resolve sistemas lineares
     c1 = constantes[0]
     c2 = constantes[1]
@@ -28,6 +38,11 @@ def solucao_geral(coeficientes, ci, n):
     
     y0 = c1*(gama1)**n + c2*(gama2)**n
     print(f"Solução geral: {c1:.2f}({gama1})^n + {c2:.2f}({gama2})^n")
+
+    if abs(gama1) < 1 and abs(gama2) < 1:
+        print("Sistema estável (todos os polos dentro do círculo unitário)")
+    else:
+        print("Sistema instável (ao menos um polo fora do círculo unitário)")
     return y0
 
 solucao = solucao_geral(c, ci, n)

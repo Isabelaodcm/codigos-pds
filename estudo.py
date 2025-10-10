@@ -2,7 +2,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-# Função qualquer
+# # Função qualquer
 def f(t):
     return np.sin(t) + t**2
 
@@ -20,3 +20,6 @@ plt.stem(n, f1, linefmt="-b", basefmt=" ")
 plt.scatter(a, fa, color="red", s=50, zorder=5, label=f"f({a}) = {fa:.2f}")
 plt.legend()
 plt.show()
+
+array1 = [[(-3)**(-1), -(-3)**(-1)], [(-3)**(-2), -2*((-3)**(-2))]]
+array2 = [-1/3, -2/9]
