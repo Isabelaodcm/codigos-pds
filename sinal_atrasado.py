@@ -24,18 +24,6 @@ def atraso(x, nd):
 #     array = np.concatenate((np.zeros(nd), x))
 #     return array
 
-
-# def media1(x):
-#     soma = 0
-#     for i in x:
-#         soma += i
-
-#     mediaValores = soma/len(x)
-#     return mediaValores
-
-# notas = [8, 10, 7, 5]
-# print(media1(notas))
-
 def mediaMovel(x):
     vetor = []
     x0 = x
