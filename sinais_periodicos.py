@@ -1,3 +1,5 @@
+# frequencia de 0 a pi - sinal oscila mais rapido
+# frequencia de pi a 2pi - sinal vai oscilando mais devagar
 import numpy as np
 import matplotlib.pyplot as plt
 

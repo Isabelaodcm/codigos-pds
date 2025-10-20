@@ -67,20 +67,4 @@ def solucao_geral(coeficientes, ci, n):
 solucao = solucao_geral(c, ci, n)
 plt.stem(n, solucao)
 plt.show()
-
-
-# if len(coef) == 2:
-#     coef1 = coef[0]
-#     coef1*gama + coef[1] = 0 
-#     resolve eq do 1 grau
-
-# if len(coef) == 3:
-#     coef[0]*gama^2 + coef[1]*gama + coef1[2]
-#     calculo baskhara
-
-#     if baskhara >= 0:
-#         resolve normal
-
-#     else:
-#         resolve para raizes complexas
     

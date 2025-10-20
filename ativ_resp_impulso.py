@@ -30,3 +30,14 @@ plt.xlabel('n')
 plt.ylabel('h[n]')
 plt.grid(True)
 plt.show()
+
+# Modelar o processo de geração do sinal metabólico cerebral como um sistema Linear e Invariante no Tempo (LTI)
+#  é vantajoso porque simplifica significativamente a análise e o entendimento do fenômeno. Um sistema LTI pode ser 
+# descrito apenas por sua resposta ao impulso, permitindo que a relação entre a entrada e a saída seja expressa por
+#  uma simples convolução. Isso torna possível aplicar ferramentas matemáticas, como as transformadas de Fourier, 
+# Laplace e Z, para analisar o comportamento do sistema em diferentes frequências. 
+# Além disso, a linearidade garante que a resposta a uma combinação de estímulos seja a soma das respostas 
+# individuais, facilitando a previsão do comportamento frente a estímulos complexos. A invariância no tempo 
+# assegura que as propriedades do sistema não mudam com o tempo, o que torna o modelo estável e reprodutível. Assim, 
+# representar o processo como um sistema LTI permite ao cientista analisar e interpretar os sinais cerebrais de 
+# forma mais simples, eficiente e com boa aproximação do comportamento real.

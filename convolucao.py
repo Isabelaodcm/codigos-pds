@@ -14,10 +14,10 @@ def convolucao(x, h):
         vetor.append(float(soma))
     return vetor
 
-# n = np.arange(len(c1))
+n = np.arange(51)
 x = [0.8, 0.3, 0.5, 0.7, 1.3]
-# h = 0.5**n
-h = [1, 0.5, 0.25, 0.125, 0.0625]
+h = 0.5**n
+# h = [1, 0.5, 0.25, 0.125, 0.0625]
 
 print(np.convolve(x, h))
 
