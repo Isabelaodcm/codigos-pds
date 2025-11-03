@@ -23,3 +23,9 @@ plt.show()
 
 array1 = [[(-3)**(-1), -(-3)**(-1)], [(-3)**(-2), -2*((-3)**(-2))]]
 array2 = [-1/3, -2/9]
+
+# numpy.linspace(start, stop, num=50, endpoint=True):
+# start: O valor inicial da sequência (obrigatório).
+# stop: O valor final da sequência (obrigatório).
+# num: O número de amostras a serem geradas. Se omitido, o padrão é 50.
+# endpoint: Se True (padrão), o valor stop é incluído no array. Se False, o valor stop é excluído. 

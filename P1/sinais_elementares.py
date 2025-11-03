@@ -23,7 +23,7 @@ delta = np.zeros(len(n1))
 delta[n1 == 0] = 1 
 
 # print(impulso(1))
-# print(impulso(3))
+print(impulso(3))
 
 def degrau(n):
     valores = []
