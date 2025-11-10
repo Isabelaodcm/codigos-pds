@@ -20,7 +20,7 @@ n = np.arange(4)
 u = np.ones(len(n))
 u[n < 0] = 0 
 
-x = [500, 500, 500]
+x = [9000, 500, 500]
 h = u*(1.01)**n
 
 c1 = convolucao(x, h)
