@@ -18,7 +18,7 @@ def filtro_passa_baixa(fc, f_sinal, amplitude=1, fase=0):
     w = 2 * np.pi * f
 
     # Função de transferência H(jw)
-    H = 1 / (1 + 1j * (w / wc))
+    H = 1 / (1 + 1j * (w / wc))   
 
     # Módulo e fase (em graus)
     H_mod = np.abs(H)
@@ -95,4 +95,8 @@ def filtro_passa_baixa(fc, f_sinal, amplitude=1, fase=0):
     plt.tight_layout()
     plt.show()
 
-filtro_passa_baixa(fc=500, f_sinal=100, amplitude=1)
+# tal = R*C
+tau = 10
+fc = 1/(2*np.pi*tau)
+
+filtro_passa_baixa(fc=0.1, f_sinal=10, amplitude=1)
