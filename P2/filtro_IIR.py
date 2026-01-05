@@ -111,7 +111,7 @@ plt.show()
 
 t = np.arange(0, 0.01, 1/fs)
 
-sinal_low = np.sin(2*np.pi*1500*t)      # antes da faixa de corte
+sinal_low = np.cos(2*np.pi*1500*t)      # antes da faixa de corte
 sinal_high = np.sin(2*np.pi*3000*t)    # depois da faixa de corte
 sinal_mix = sinal_low + sinal_high     # combinado
 
